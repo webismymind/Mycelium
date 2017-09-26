@@ -16,8 +16,8 @@ export default class extends Component {
         Stack.setItem('rootApp', this);
     }
 
-    fireTopAlert = (text, milliseconds, style) => {
-        this.topAlert.fire(text,milliseconds,style);
+    fireTempNotification = (text, milliseconds, style) => {
+        this.tempNotification.fire(text,milliseconds,style);
     };
 
     showLoader = () =>{
@@ -34,7 +34,7 @@ export default class extends Component {
                 <View>
                     {this.props.children}
                 </View>
-                <TopAlert ref={(component) => {this.topAlert = component}} />
+                <TopAlert ref={(component) => {this.tempNotification = component}} />
                 <Loader ref={(component) => {this.loader = component}}/>
             </View>
         )

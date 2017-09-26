@@ -9,10 +9,10 @@ Stack name from RootComponent is **rootApp**
 ## Methods
 
 
-### fireTopAlert(text,milliseconds,style)
+### fireTempNotification(text,milliseconds,style)
 
 #### Description
-*Display attached [TopAlert](https://github.com/webismymind/Mycellium/blob/master/Doc/Components/TopAlert.MD) Component.*
+*Display attached [TempNotification](https://github.com/webismymind/Mycellium/blob/master/Doc/Components/TempNotification.MD) Component.*
 
 #### Parameters
 text : (string) Text to display.<br />
