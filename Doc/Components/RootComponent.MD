@@ -8,6 +8,7 @@ Stack name from RootComponent is **rootApp**
 
 
 ###fireTopAlert(text,milliseconds,style)###
+
 **Description**
 *Display a simple notification UI component. From the top of the screen.*
 
