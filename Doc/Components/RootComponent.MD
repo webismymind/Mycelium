@@ -12,12 +12,12 @@ Stack name from RootComponent is **rootApp**
 ### fireTopAlert(text,milliseconds,style)
 
 #### Description
-*Display a simple notification UI component. From the top of the screen.*
+*Display attached [TopAlert](https://github.com/webismymind/Mycellium/blob/master/Doc/Components/TopAlert.MD) Component.*
 
 #### Parameters
 text : (string) Text to display.<br />
 milliseconds (int) Number of milliseconds of alert display.<br />
-style : (object) Styling object. Currentluy accept "backgroundColor" and "color"<br />
+style : (object) Styling object. Currently accept "backgroundColor" and "color"<br />
 
 #### Example
 ```javascript
