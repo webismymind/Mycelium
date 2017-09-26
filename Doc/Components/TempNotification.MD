@@ -1,6 +1,7 @@
-# TopAlert
+# TempNotification
 
-Simple notification component. Displayed from the top of the parent component.
+Simple notification component. Displayed from the top of the parent component.<br />
+This notification is supposed to be ephemeral. 
 
 ## Methods
 

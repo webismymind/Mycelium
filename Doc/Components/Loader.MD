@@ -1,6 +1,6 @@
 # Loader
 
-Loader component. Take all the parent element size with an overlay, preventing the user to tap elements underneath it. 
+This loader take all the parent element size with an overlay, preventing the user to tap elements underneath it. 
 
 ## Methods
 
