@@ -11,15 +11,15 @@ Stack name from RootComponent is **rootApp**
 
 ### fireTopAlert(text,milliseconds,style)
 
-**Description**
+#### Description
 *Display a simple notification UI component. From the top of the screen.*
 
-**Parameters**
+#### Parameters
 text : (string) Text to display.
 milliseconds (int) Number of milliseconds of alert display.
 style : (object) Styling object. Currentluy accept "backgroundColor" and "color"
 
-**Example**
+#### Example
 ```javascript
 Stack.getItem('rootApp').fireTopAlert('Hello',1500, {color:'white', backgroundColor: 'green'});
 ```
