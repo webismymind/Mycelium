@@ -15,9 +15,8 @@ export default class extends Component {
         Stack.setItem('rootApp', this);
     }
 
-
-    fireTopAlert = (text, color, milliseconds) => {
-        this.topAlert.fire(text,color,milliseconds);
+    fireTopAlert = (text, milliseconds, style) => {
+        this.topAlert.fire(text,milliseconds,style);
     };
 
     render() {
@@ -30,5 +29,4 @@ export default class extends Component {
             </View>
         )
     }
-
 }
