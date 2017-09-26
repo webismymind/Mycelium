@@ -21,19 +21,18 @@ export default class extends Component {
     }
 
     componentDidMount() {
-        this.runAnimation();
-    }
-
-    runAnimation() {
-        this.state.rotate.setValue(0);
-        Animated.timing(
-            this.state.rotate,
-            {
-                toValue: 100,
-                duration: 1500,
-                easing: Easing.linear
-            }
-        ).start(() => { this.runAnimation()});
+        var runAnimation = () => {
+            this.state.rotate.setValue(0);
+            Animated.timing(
+                this.state.rotate,
+                {
+                    toValue: 100,
+                    duration: 1500,
+                    easing: Easing.linear
+                }
+            ).start(() => { runAnimation()});
+        }
+        runAnimation();
     }
 
     setStyle = (style) => {
