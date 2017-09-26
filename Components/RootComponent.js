@@ -7,11 +7,12 @@ import Component from './Component';
 import { StyleSheet, Text, View } from 'react-native';
 import TopAlert from'./TopAlert';
 import Stack from'../Utils/Stack';
+import Loader from './Loader';
 
 export default class extends Component {
 
     constructor(props) {
-       super(props);
+        super(props);
         Stack.setItem('rootApp', this);
     }
 
@@ -19,13 +20,22 @@ export default class extends Component {
         this.topAlert.fire(text,milliseconds,style);
     };
 
+    showLoader = () =>{
+        this.loader.show();
+    };
+
+    hideLoader = () => {
+        this.loader.hide();
+    };
+
     render() {
         return (
             <View style={this.props.style}>
-                <TopAlert ref={(component) => {this.topAlert = component}} />
                 <View>
                     {this.props.children}
                 </View>
+                <TopAlert ref={(component) => {this.topAlert = component}} />
+                <Loader ref={(component) => {this.loader = component}}/>
             </View>
         )
     }
