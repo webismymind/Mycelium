@@ -25,4 +25,27 @@ Stack.getItem('rootApp').fireTopAlert('Hello',1500, {color:'white', backgroundCo
 ```
 
 
+### showLoader()
+
+#### Description
+*Show attached [Loader](https://github.com/webismymind/Mycellium/blob/master/Doc/Components/Loader.MD) Component.*
+
+#### Example
+```javascript
+Stack.getItem('rootApp').showLoader();
+```
+
+
+### hideLoader()
+
+#### Description
+*Hide attached [Loader](https://github.com/webismymind/Mycellium/blob/master/Doc/Components/Loader.MD) Component.*
+
+#### Example
+```javascript
+Stack.getItem('rootApp').hideLoader();
+```
+
+
+
 
