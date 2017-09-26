@@ -15,9 +15,9 @@ Stack name from RootComponent is **rootApp**
 *Display a simple notification UI component. From the top of the screen.*
 
 #### Parameters
-text : (string) Text to display.
-milliseconds (int) Number of milliseconds of alert display.
-style : (object) Styling object. Currentluy accept "backgroundColor" and "color"
+text : (string) Text to display.<br />
+milliseconds (int) Number of milliseconds of alert display.<br />
+style : (object) Styling object. Currentluy accept "backgroundColor" and "color"<br />
 
 #### Example
 ```javascript
