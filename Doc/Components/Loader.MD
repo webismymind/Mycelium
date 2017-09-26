@@ -24,7 +24,7 @@ Loader component. Take all the parent element size with an overlay, preventing t
 style : (object) Object containing styles. For now you can define theses:<br />
 
 - overlay (View component)
-- ox (View component)
+- box (View component)
 
 
 ### setSpinner(component)
