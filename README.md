@@ -1,4 +1,6 @@
-# Mycellium
+
+![Logo](https://github.com/webismymind/Mycelium/blob/master/Doc/myceliumsmall.png?raw=true)
+<br />
 ReactNative Toolkit edited by webismymind
 
 ## Components
