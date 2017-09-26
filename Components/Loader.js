@@ -31,7 +31,7 @@ export default class extends Component {
                     easing: Easing.linear
                 }
             ).start(() => { runAnimation()});
-        }
+        };
         runAnimation();
     }
 
