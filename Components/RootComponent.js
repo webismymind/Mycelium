@@ -8,6 +8,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import TempNotification from'./TempNotification';
 import Stack from'../Utils/Stack';
 import Loader from './Loader';
+import Modale from './Modale';
 
 export default class extends Component {
 
@@ -28,6 +29,14 @@ export default class extends Component {
         this.loader.hide();
     };
 
+    showModale = () =>{
+        this.modale.show();
+    };
+
+    hideModale = () => {
+        this.modale.hide();
+    };
+
     render() {
         return (
             <View style={this.props.style}>
@@ -35,6 +44,7 @@ export default class extends Component {
                     {this.props.children}
                 </View>
                 <TempNotification ref={(component) => {this.tempNotification = component}} />
+                <Modale ref={(component) => {this.modale = component}}/>
                 <Loader ref={(component) => {this.loader = component}}/>
             </View>
         )
