@@ -5,7 +5,7 @@ import React from 'react';
 
 import Component from './Component';
 import { StyleSheet, Text, View } from 'react-native';
-import TopAlert from'./TopAlert';
+import TempNotification from'./TempNotification';
 import Stack from'../Utils/Stack';
 import Loader from './Loader';
 
@@ -34,7 +34,7 @@ export default class extends Component {
                 <View>
                     {this.props.children}
                 </View>
-                <TopAlert ref={(component) => {this.tempNotification = component}} />
+                <TempNotification ref={(component) => {this.tempNotification = component}} />
                 <Loader ref={(component) => {this.loader = component}}/>
             </View>
         )

@@ -21,7 +21,7 @@ style : (object) Styling object. Currently accept "backgroundColor" and "color"<
 
 #### Example
 ```javascript
-Stack.getItem('rootApp').fireTopAlert('Hello',1500, {color:'white', backgroundColor: 'green'});
+Stack.getItem('rootApp').fireTempNotification('Hello',1500, {color:'white', backgroundColor: 'green'});
 ```
 
 

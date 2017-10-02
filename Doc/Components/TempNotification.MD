@@ -17,7 +17,7 @@ style : (object) Styling object. Currently accept "backgroundColor" and "color"<
 
 #### Example
 ```javascript
-topAlert.fire('Hello',1500, {color:'white', backgroundColor: 'green'});
+TempNotification.fire('Hello',1500, {color:'white', backgroundColor: 'green'});
 ```
 
 
