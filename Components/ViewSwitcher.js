@@ -1,8 +1,7 @@
 import React from 'react';
 import {View,Text} from 'react-native';
 
-import {Component,RootComponent,Stack} from 'react-native-mycelium';
-import Stylesheet from 'app/js/Styles/Stylesheet';
+import Component from './Component';
 
 export default class extends Component {
 
