@@ -1,6 +1,6 @@
 {
-  "name": "Mycellium",
-  "version": "0.1",
+  "name": "react-native-mycelium",
+  "version": "v0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
