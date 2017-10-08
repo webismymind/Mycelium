@@ -42,9 +42,8 @@ export default class extends Component {
     }
 
     render() {
-        return (<View>
-            {this.state.active}
-        </View>);
+        return this.state.active || <View />;
+
 
     }
 }
