@@ -40,9 +40,7 @@ export default class extends Component {
     render() {
         return (
             <View style={this.props.style}>
-                <View>
-                    {this.props.children}
-                </View>
+                {this.props.children}
                 <TempNotification ref={(component) => {this.tempNotification = component}} />
                 <Modale ref={(component) => {this.modale = component}}/>
                 <Loader ref={(component) => {this.loader = component}}/>
