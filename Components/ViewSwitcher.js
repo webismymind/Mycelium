@@ -12,13 +12,14 @@ export default class extends Component {
             active : <View></View>
         };
         this.history = [];
-        if (this.props.defaultView) {
-            this.switchView(this.props.defaultView, this.props.defaultProps || {});
-        }
     }
+
 
     registerView(name,component) {
         this.views[name] = component;
+        if (this.props.defaultView === name ) {
+            this.switchView(this.props.defaultView, this.props.defaultProps || {});
+        }
     }
 
     switchView(name, props) {
