@@ -6,6 +6,10 @@ This component provides UI modules used at the very top of your project, like Al
 
 Stack name from RootComponent is **rootApp**
 
+## Props
+
+**style** : accepts all React's View properties for styling
+
 ## Methods
 
 

@@ -9,16 +9,19 @@ export default class extends Component {
         super(props);
         this.views = {};
         this.state = {
-            active : this.props.defaultView || <View></View>
+            active : <View></View>
         };
         this.history = [];
+        if (this.props.defaultView) {
+            this.switchView(this.props.defaultView, this.props.defaultProps || {});
+        }
     }
 
     registerView(name,component) {
         this.views[name] = component;
     }
 
-    switchView(name, parameters) {
+    switchView(name, props) {
         let active = this.views[name];
         this.setState({active: React.createElement(active,parameters)});
         this.history.push({name:name, parameters:parameters});
