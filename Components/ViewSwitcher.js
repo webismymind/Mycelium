@@ -23,7 +23,7 @@ export default class extends Component {
 
     switchView(name, props) {
         let active = this.views[name];
-        this.setState({active: React.createElement(active,parameters)});
+        this.setState({active: React.createElement(active,parameters || {})});
         this.history.push({name:name, parameters:parameters});
     }
 
