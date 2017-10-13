@@ -6,6 +6,7 @@ import TempNotification from './Components/TempNotification';
 import Listeners from './Listeners/Listeners';
 import Stack from './Utils/Stack';
 import ViewSwitcher from './Components/ViewSwitcher';
+import Loader from './Components/Loader';
 
 
 export {
@@ -14,6 +15,7 @@ export {
     RootComponent,
     TempNotification,
     Stack,
-    ViewSwitcher
+    ViewSwitcher,
+    Loader
 };
 
