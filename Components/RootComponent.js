@@ -9,6 +9,7 @@ import TempNotification from'./TempNotification';
 import Stack from'../Utils/Stack';
 import Loader from './Loader';
 import Modale from './Modale';
+import Alert from './Alert';
 
 export default class extends Component {
 
@@ -37,6 +38,14 @@ export default class extends Component {
         this.modale.hide();
     };
 
+    showAlert = (content) => {
+        this.alert.show(content);
+    };
+
+    hideAlert = () => {
+      this.alert.hide();
+    };
+
     render() {
         return (
             <View style={this.props.style}>
@@ -44,6 +53,7 @@ export default class extends Component {
                 <TempNotification ref={(component) => {this.tempNotification = component}} />
                 <Modale ref={(component) => {this.modale = component}}/>
                 <Loader ref={(component) => {this.loader = component}}/>
+                <Alert ref={(component) => {this.alert = component}}/>
             </View>
         )
     }
