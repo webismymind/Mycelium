@@ -15,7 +15,8 @@ export default class extends Component {
             style : {},
             rotate: new Animated.Value(0),
             opacity: new Animated.Value(0),
-            spinner :  <Icon name="spinner" size={26} color="black" />
+            spinner :  <Icon name="spinner" size={26} color="black" />,
+            message : ''
 
         }
     }
@@ -34,6 +35,11 @@ export default class extends Component {
         };
         runAnimation();
     }
+
+    //Todo Documentation..
+    setMessage = (message) => {
+      this.setState({message});
+    };
 
     setStyle = (style) => {
 
@@ -77,6 +83,7 @@ export default class extends Component {
                         <Animated.View  style={{ transform: [{ rotate: interpolatedRotateAnimation }] }}>
                             {this.state.spinner}
                         </Animated.View>
+                        {this.state.message && <Text styles={this.state.style.message || {}}>{this.state.message}</Text>}
                     </View>
                 </Animated.View>
             )
