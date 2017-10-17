@@ -83,7 +83,7 @@ export default class extends Component {
                         <Animated.View  style={{ transform: [{ rotate: interpolatedRotateAnimation }] }}>
                             {this.state.spinner}
                         </Animated.View>
-                        {this.state.message && <Text styles={this.state.style.message || {}}>{this.state.message}</Text>}
+                        {this.state.message && <Text style={this.state.style.message || {}}>{this.state.message}</Text>}
                     </View>
                 </Animated.View>
             )
