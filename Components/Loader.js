@@ -38,7 +38,7 @@ export default class extends Component {
 
     //Todo Documentation..
     setMessage = (message) => {
-      this.setState({message});
+        this.setState({message});
     };
 
     setStyle = (style) => {
@@ -80,10 +80,10 @@ export default class extends Component {
             return (
                 <Animated.View style={[styles.box, this.state.style.overlay || {}, { opacity: this.state.opacity}]}>
                     <View style={[styles.inner,this.state.style.box || {}]}>
-                        <Animated.View  style={{ transform: [{ rotate: interpolatedRotateAnimation }] }}>
+                        <Animated.View  style={{alignItems:'center', transform: [{ rotate: interpolatedRotateAnimation }] }}>
                             {this.state.spinner}
                         </Animated.View>
-                        {this.state.message && <Text style={this.state.style.message || {}}>{this.state.message}</Text>}
+                        {this.state.message && <Text style={[styles.message,this.state.style.message || {}]}>{this.state.message}</Text>}
                     </View>
                 </Animated.View>
             )
@@ -110,6 +110,9 @@ const styles = StyleSheet.create({
         backgroundColor:'white',
         padding:20,
         borderRadius:10,
+    },
+    message : {
+        marginTop:20
     },
 
 });
