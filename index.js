@@ -9,6 +9,8 @@ import ViewSwitcher from './Components/ViewSwitcher';
 import Loader from './Components/Loader';
 import Alert from './Components/Alert';
 
+import TextInput from './Components/Overrides/TextInput';
+
 
 export {
     Component,
@@ -18,6 +20,8 @@ export {
     Stack,
     ViewSwitcher,
     Loader,
-    Alert
+    Alert,
+    TextInput,
+
 };
 
