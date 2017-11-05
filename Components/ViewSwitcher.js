@@ -14,7 +14,6 @@ export default class extends Component {
         this.history = [];
     }
 
-
     registerView(name,component) {
         this.views[name] = component;
         if (this.props.defaultView === name ) {
@@ -44,7 +43,5 @@ export default class extends Component {
 
     render() {
         return this.state.active || <View />;
-
-
     }
 }

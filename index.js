@@ -8,6 +8,7 @@ import Stack from './Utils/Stack';
 import ViewSwitcher from './Components/ViewSwitcher';
 import Loader from './Components/Loader';
 import Alert from './Components/Alert';
+import Modale from './Components/Modale';
 
 import TextInput from './Components/Overrides/TextInput';
 
@@ -22,6 +23,6 @@ export {
     Loader,
     Alert,
     TextInput,
-
+    Modale
 };
 
