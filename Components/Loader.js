@@ -29,7 +29,8 @@ export default class extends Component {
                 {
                     toValue: 100,
                     duration: 1500,
-                    easing: Easing.linear
+                    easing: Easing.linear,
+                    useNativeDriver:true
                 }
             ).start(() => { runAnimation()});
         };
@@ -60,11 +61,11 @@ export default class extends Component {
 
     show = () => {
         this.setState({isVisible: true});
-        Animated.timing( this.state.opacity, {toValue: 1, duration: 200}).start();
+        Animated.timing( this.state.opacity, {toValue: 1, duration: 200,useNativeDriver:true}).start();
     };
 
     hide = () => {
-        Animated.timing( this.state.opacity, {toValue: 0, duration: 200}).start(() => {
+        Animated.timing( this.state.opacity, {toValue: 0, duration: 200,useNativeDriver:true}).start(() => {
             this.setState({isVisible: false});
         });
     };

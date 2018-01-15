@@ -9,6 +9,7 @@ import ViewSwitcher from './Components/ViewSwitcher';
 import Loader from './Components/Loader';
 import Alert from './Components/Alert';
 import Modale from './Components/Modale';
+import Confirm from './Components/Confirm';
 
 import TextInput from './Components/Overrides/TextInput';
 
@@ -23,6 +24,7 @@ export {
     Loader,
     Alert,
     TextInput,
-    Modale
+    Modale,
+    Confirm
 };
 
