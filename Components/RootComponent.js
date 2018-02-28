@@ -52,6 +52,7 @@ export default class extends Component {
                 {this.props.children}
                 <TempNotification ref={(component) => {this.tempNotification = component}} />
                 <Modale ref={(component) => {this.modale = component}}/>
+                <Modale ref={(component) => {this.dropdownModale = component}}/>
                 <Loader ref={(component) => {this.loader = component}}/>
                 <Alert ref={(component) => {this.alert = component}}/>
             </View>

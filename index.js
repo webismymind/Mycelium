@@ -10,6 +10,7 @@ import Loader from './Components/Loader';
 import Alert from './Components/Alert';
 import Modale from './Components/Modale';
 import Confirm from './Components/Confirm';
+import Dropdown from './Components/Dropdown';
 
 import TextInput from './Components/Overrides/TextInput';
 
@@ -25,6 +26,7 @@ export {
     Alert,
     TextInput,
     Modale,
-    Confirm
+    Confirm,
+    Dropdown
 };
 
