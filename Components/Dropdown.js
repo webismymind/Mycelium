@@ -1,11 +1,10 @@
 import React from 'react';
 
 import Component from './Component';
-import { Easing, StyleSheet, Text, View, Animated ,TouchableOpacity,ListView} from 'react-native';
+import { Easing, StyleSheet, Text, View, Animated ,TouchableOpacity,FlatList} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Stack from'../Utils/Stack';
 
-const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => true});
 
 class DropdownModale extends Component {
 
@@ -23,9 +22,9 @@ class DropdownModale extends Component {
                     <Icon name="times" color='grey' size={15} />
                 </TouchableOpacity> 
                 <Text style={styles.modalTitle}>{this.props.title || 'Select an option'}</Text>
-                <ListView
+                <FlatList
                         style={styles.list}
-                        dataSource={this.props.choices}
+                        data={this.props.choices}
                         enableEmptySections={true}
                         renderRow={(rowData) => { return (
                             <TouchableOpacity style={styles.listItem} onPress={() => {this.onItemSelected(rowData)}}>
@@ -52,7 +51,7 @@ export default class extends Component {
     }
 
     selectValue = () => {
-        let choices = ds.cloneWithRows(this.props.choices);
+        let choices = this.props.choices;
         Stack.getItem('rootApp').dropdownModale.setContent(<DropdownModale title={this.props.title || false} value={this.props.value} choices= {choices} onItemSelected={this.onItemSelected} />);
         Stack.getItem('rootApp').dropdownModale.show();
     }
