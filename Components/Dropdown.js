@@ -5,7 +5,6 @@ import { Easing, StyleSheet, Text, View, Animated ,TouchableOpacity,FlatList} fr
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Stack from'../Utils/Stack';
 
-
 class DropdownModale extends Component {
 
 
@@ -20,18 +19,17 @@ class DropdownModale extends Component {
             <View style={styles.modaleWrapper}>
                 <TouchableOpacity style={styles.closeModale} onPress={()=> {Stack.getItem('rootApp').dropdownModale.hide();}}>
                     <Icon name="times" color='grey' size={15} />
-                </TouchableOpacity> 
+                </TouchableOpacity>
                 <Text style={styles.modalTitle}>{this.props.title || 'Select an option'}</Text>
+
                 <FlatList
-                        style={styles.list}
-                        data={this.props.choices}
-                        enableEmptySections={true}
-                        renderRow={(rowData) => { return (
-                            <TouchableOpacity style={styles.listItem} onPress={() => {this.onItemSelected(rowData)}}>
-                                <Text>{ rowData.label}</Text>
-                            </TouchableOpacity>
-                        );
-                }} />
+                    data={this.props.choices}
+                    renderItem={({ item, index }) => (
+                        <TouchableOpacity style={styles.listItem} onPress={() => {this.onItemSelected(item)}}>
+                            <Text>{ item.label}</Text>
+                        </TouchableOpacity>
+                    )}
+                  />
             </View>
         );
     }
@@ -39,10 +37,10 @@ class DropdownModale extends Component {
 }
 
 export default class extends Component {
-    
+
     constructor(props) {
         super(props);
-       
+
     }
 
     onItemSelected = (value) => {
@@ -102,4 +100,3 @@ const styles = StyleSheet.create({
 
     }
 });
-
